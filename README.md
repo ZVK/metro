@@ -1,4 +1,4 @@
-# PULSE Web Audio Metronome
+# Web Audio Metronome
 
 ![metro screen shot](https://raw.githubusercontent.com/ZVK/metro/master/images/metro-ss.png)
 
