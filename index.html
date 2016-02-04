@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width user-scalable=no">
+    <title>Metronome</title>
+    <script src="./js/mobileAlerts.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="./js/AudioContextMonkeyPatch.js"></script>
+    <script src="./js/metronome.js"></script>
+  </head>
+  <body>
+    <div id="ui">
+      <div><img id="dial" src="./images/dial.png"/></div>
+      <div><img id="skin" src="./images/traditional_skin.png"/></div>
+      <div id="tempoName">ANDANTE</div>
+      <div id="digits">
+        <span id="showTempo">108</span> 
+      </div>
+      <div> <input type="range" id="range" min="40.0" max="208.0" step="1" value="108" onInput="changeTempo(value); document.getElementById('tempo').value=value"/>
+      </div>
+    </div>
+    <div id="controls">
+      <div><a class="play" onclick="this.innerText = play();">play</a>
+      </div>
+    </div>
+    <div id="top-controls"><select id="Meter" onchange="play(); inputted_meter=value; play()">
+              <option value="2/4">2/4</option>
+              <option value="3/4">3/4</option>
+              <option value="4/4">4/4</option>
+              <option value="5/4">5/4</option>
+              <option value="6/8">6/8</option>
+              <option value="7/8">7/8</option>
+          </select>
+          <input id="tempo" type="number" value="108" min="40" max="208" onchange="changeTempo(value); document.getElementById('range').value=value">BPM</input>
+      </div>
+   </body>
+</html>

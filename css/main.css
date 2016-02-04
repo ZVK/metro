@@ -1,0 +1,137 @@
+#dial{
+	position: absolute;
+	z-index: 1;
+	left: 175px;
+	top: 66px;
+	width: 18px;
+	height: 210px;
+	pointer-events: none;
+	transform: rotate(0deg);
+}
+#skin{
+	position: absolute;
+	width: 375px;
+	height: 295px;	
+	z-index: 2;
+	left: 0px;
+	top: 0px;
+	pointer-events: none;
+}
+
+#tempoName{
+	position: absolute;
+	z-index: 3;
+	left: 143px;
+	top: 155px;
+	color: white;
+	font-size: 20px;
+	font-family: gunplay;
+}
+
+#digits{
+	position: absolute;
+	z-index: 3;
+	left: 139px;
+	top: 170px;
+	color: white;
+	font-size: 58px;
+	font-family: gunplay;
+}
+#range{
+	position: absolute;
+	left: 121px;
+	top: 264px;
+	z-index: 3;
+	width: 122px;
+}
+input[type=range]{
+	width: 122px;
+	padding-top: 5px;
+	margin-left: 0px;
+}
+#top-controls{
+	width: 375px;
+ 	text-align: center;
+}
+#meter{
+	margin-top: 300px;
+	}
+#tempo{
+	margin-top: 300px;
+	width: 40px;
+}
+@font-face {
+	font-family: gunplay;
+	src: url('../gunplay.ttf');
+}
+.ui-slider-horizonal .ui-state-default{
+	background: white url(./images/range.png) no-repeat scroll 50% 50%;
+}
+#controls {
+	position: absolute;
+	font-family:arial;
+	font-weight:bold;
+	margin: 15px;
+	top: 100px;
+	left: 136px;
+	z-index: 4;
+}
+
+#controls * {
+	margin: 5px;
+	display:inline-block;	
+}
+
+.container {
+	position: absolute;
+	left: 140px;
+	top: 128px;
+	z-index: 4;
+}
+
+.play {
+	background-color:#3FA9F5;
+	box-shadow: 20px;
+	border-radius:20px;
+	color:#ffffff;
+	text-decoration:none;
+	text-shadow:1px 1px 6px #000000;
+	width: 45px;
+	height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+.play:hover {
+	background-color:#adaa37;
+}
+
+.play:active {
+	position:relative;
+	top:1px; left: 1px;
+}
+
+#showTempo { 
+	display: inline-block;
+	width: 45px; 
+}
+
+#showSwing { 
+	display: inline-block;
+	width: 40px; 
+}
+
+* {
+    -webkit-user-select: none;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    position: relative;
+    background-color: #BDCCD4;
+}
+body {
+    overflow: auto;
+}
